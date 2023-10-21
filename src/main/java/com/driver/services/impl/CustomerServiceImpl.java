@@ -30,12 +30,22 @@ public class CustomerServiceImpl implements CustomerService {
 	@Override
 	public void register(Customer customer) {
 		//Save the customer in database
+		customerRepository2.save(customer);
 	}
 
 	@Override
 	public void deleteCustomer(Integer customerId) {
 		// Delete customer without using deleteById function
-
+		Customer customer = customerRepository2.findById(customerId).get();
+		//unlock if code fails
+//		List<TripBooking> trips = customer.getTrips();
+//
+//		for(TripBooking tripBooking : trips) {
+//			if(tripBooking.getStatus() == TripStatus.CONFIRMED){
+//				tripBooking.setStatus(TripStatus.CANCELED);
+//			}
+//		}
+		customerRepository2.delete(customer);
 	}
 
 	@Override
