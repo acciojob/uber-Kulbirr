@@ -20,7 +20,7 @@ public class DriverController {
 	
 	@DeleteMapping(value = "/delete")
 	public void deleteDriver(@RequestParam Integer driverId){
-		driverService.deleteDriver(driverId);
+		driverService.removeDriver(driverId);
 	}
 
 	@PutMapping("/status")
