@@ -24,5 +24,6 @@ public class DriverController {
 
 	@PutMapping("/status")
 	public void updateStatus(@RequestParam Integer driverId){
+		driverService.updateStatus(driverId);
 	}
 }
