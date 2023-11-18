@@ -11,7 +11,6 @@ import org.springframework.stereotype.Service;
 import com.driver.model.Admin;
 import com.driver.model.Customer;
 import com.driver.model.Driver;
-import java.sql.Driver;
 import com.driver.repository.AdminRepository;
 import com.driver.repository.CustomerRepository;
 import com.driver.repository.DriverRepository;

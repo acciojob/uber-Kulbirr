@@ -30,7 +30,7 @@ public class DriverServiceImpl implements DriverService {
 
 		cab.setAvailable(true);
 		cab.setPerKmRate(10);
-		cab.setDriver((java.sql.Driver) driver);
+		cab.setDriver(driver);
 
 		driver.setMobile(mobile);
 		driver.setPassword(password);
